@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulta Brasil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Consulta Brasil</div>
+    <ul>
+        <li><a href="#ddd">DDD</a></li>
+        <li><a href="#feriados">Feriados</a></li>
+        <li><a href="#cep">CEP</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Consulta Brasil</h1>
+    <p>Fatec Taubaté — Análise e Desenvolvimento de Sistemas</p>
+</header>
+
+<main class="container">
+
+    <section class="card" id="ddd">
+        <h2>Consultar DDD</h2>
+        <p>Encontre a região correspondente a um DDD ou cidade.</p>
+        <input id="dddInput" type="text" placeholder="Ex: 11">
+        <button onclick="consultarDDD()">Consultar</button>
+        <div id="resultadoDDD" class="resultado"></div>
+    </section>
+
+    <section class="card" id="feriados">
+        <h2>Feriados por Ano</h2>
+        <p>Veja todos os feriados nacionais.</p>
+        <input id="anoInput" type="number" placeholder="Ex: 2025">
+        <button onclick="consultarFeriados()">Consultar</button>
+        <div id="resultadoFeriados" class="resultado"></div>
+    </section>
+
+    <section class="card" id="cep">
+        <h2>Buscar CEP</h2>
+        <p>Descubra endereço, bairro e cidade pelo CEP informado.</p>
+        <input id="cepInput" type="text" placeholder="Ex: 01001-000">
+        <button onclick="consultarCEP()">Consultar</button>
+        <div id="resultadoCEP" class="resultado"></div>
+    </section>
+
+</main>
+
+<footer>
+    Desenvolvido por:
+    <div class="footer-names">
+        Cauã Souza Almeida<br>
+        Gabriel Francisco Santos de Alencar<br>
+        João Pedro Carvalho de Alencar
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
